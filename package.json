@@ -1,14 +1,16 @@
 {
 	"name": "share-on-sharemycode-io",
 	"displayName": "Share on ShareMyCode.io",
+	"publisher": "Nouvelle-Technofr",
 	"description": "Easily share snippets on ShareMyCode.io website",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon": "images/logo.png",
 	"activationEvents": [
 		"onCommand:share-on-sharemycode-io.share"
 	],
@@ -58,5 +60,9 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NouvelleTechno/Share-on-ShareMyCode.io.git"
 	}
 }
