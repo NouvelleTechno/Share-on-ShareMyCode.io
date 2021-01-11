@@ -6,11 +6,11 @@ This extensions adds a context menu option that allows you to share selected sni
 
 Just right click on the document or on the selection and select "Share on ShareMyCode.io"
 
-[Right Click](images/rightclick.png)
+![Right Click](images/rightclick.png)
 
 As soon as the code is shared, you get a notification with a link to the share
 
-[Notification](images/response.png)
+![Notification](images/response.png)
 
 ## Release Notes
 
