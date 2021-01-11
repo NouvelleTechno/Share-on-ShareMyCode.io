@@ -18,4 +18,8 @@ As soon as the code is shared, you get a notification with a link to the share
 
 Initial release of Share on ShareMyCode.io
 
+### 1.0.1
+
+Small cosmetic edit
+
 **Enjoy!**
