@@ -22,17 +22,23 @@ export function activate(context: vscode.ExtensionContext) {
 
 		axios.post(url, JSON.stringify(data), {
 			headers: {
-			  	"Content-Type": "application/json",
-			  	"Accept": 'application/json',
+				"Content-Type": "application/json",
+				"Accept": 'application/json',
 			},
 		}).then(response => {
-			let responseData = "Open link";
-			vscode.window.showInformationMessage(`Successfully shared`, responseData)
-			.then(selection => {
-				if (selection === responseData) {
-					vscode.env.openExternal(vscode.Uri.parse(response.data.url));
-				}
-			});
+			let copyLink = "Copy link";
+			let openLink = "Open link";
+			vscode.window.showInformationMessage(`Successfully shared`, copyLink, openLink)
+				.then(selection => {
+					if (selection === openLink) {
+						vscode.env.openExternal(vscode.Uri.parse(response.data.url));
+					} else if (selection === copyLink) {
+						vscode.env.clipboard.writeText(response.data.url)
+							.then(response => {
+								vscode.window.showInformationMessage(`Link copied`);
+							});
+					}
+				});
 		});
 
 	});

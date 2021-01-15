@@ -22,4 +22,12 @@ Initial release of Share on ShareMyCode.io
 
 Small cosmetic edit
 
+### 1.0.2
+
+Edited README
+
+### 1.0.3
+
+Added copy button
+
 **Enjoy!**
