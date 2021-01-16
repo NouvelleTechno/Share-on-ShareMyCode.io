@@ -26,3 +26,7 @@ Initial Commit
 ## [1.0.4] - 2021-01-16
 ### Edited
 - README.md
+
+## [1.0.5] - 2021-01-16
+### Edited
+- extension.ts

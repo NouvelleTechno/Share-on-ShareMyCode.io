@@ -14,6 +14,10 @@ As soon as the code is shared, you get a notification with a link to the share
 
 ![Notification](images/response.png)
 
+You can set default behavior in the settings
+
+![Settings](images/settings.png)
+
 ## Release Notes
 
 ### 1.0.0
@@ -35,5 +39,9 @@ Added copy button
 ### 1.0.4
 
 Edited README
+
+### 1.0.5
+
+Added default settings
 
 **Enjoy!**

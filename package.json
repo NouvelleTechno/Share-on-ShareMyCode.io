@@ -3,7 +3,7 @@
 	"displayName": "Share on ShareMyCode.io",
 	"publisher": "Nouvelle-Technofr",
 	"description": "Easily share snippets on ShareMyCode.io website",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -16,19 +16,30 @@
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "share-on-sharemycode-io.share",
-				"title": "Share on ShareMyCode.io"
-			}
-		],
+		"commands": [{
+			"command": "share-on-sharemycode-io.share",
+			"title": "Share on ShareMyCode.io"
+		}],
 		"menus": {
-			"editor/context": [
-				{
-					"command": "share-on-sharemycode-io.share",
-					"group": "navigation"
+			"editor/context": [{
+				"command": "share-on-sharemycode-io.share",
+				"group": "navigation"
+			}]
+		},
+		"configuration": {
+			"title": "Share on ShareMyCode.io",
+			"properties": {
+				"share-on-sharemycode-io.defaultAction": {
+					"type": "string",
+					"default": "ask",
+					"enum": ["ask", "copy", "open"],
+					"enumDescriptions": [
+						"Always ask action to be performed",
+						"Always copy link to clipboard",
+						"Always open link in browser"
+					]
 				}
-			]
+			}
 		}
 	},
 	"scripts": {

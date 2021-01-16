@@ -28,17 +28,30 @@ export function activate(context: vscode.ExtensionContext) {
 		}).then(response => {
 			let copyLink = "Copy link";
 			let openLink = "Open link";
-			vscode.window.showInformationMessage(`Successfully shared`, copyLink, openLink)
-				.then(selection => {
-					if (selection === openLink) {
-						vscode.env.openExternal(vscode.Uri.parse(response.data.url));
-					} else if (selection === copyLink) {
-						vscode.env.clipboard.writeText(response.data.url)
-							.then(response => {
-								vscode.window.showInformationMessage(`Link copied`);
-							});
-					}
-				});
+			switch (vscode.workspace.getConfiguration("share-on-sharemycode-io").get("defaultAction")) {
+				case "ask":
+					vscode.window.showInformationMessage(`Successfully shared`, copyLink, openLink)
+						.then(selection => {
+							if (selection === openLink) {
+								vscode.env.openExternal(vscode.Uri.parse(response.data.url));
+							} else if (selection === copyLink) {
+								vscode.env.clipboard.writeText(response.data.url)
+									.then(response => {
+										vscode.window.showInformationMessage(`Link copied (This can be changed in settings)`);
+									});
+							}
+						});
+					break;
+				case "open":
+					vscode.env.openExternal(vscode.Uri.parse(response.data.url));
+					break;
+				case "copy":
+					vscode.env.clipboard.writeText(response.data.url)
+						.then(response => {
+							vscode.window.showInformationMessage(`Link copied (This can be changed in settings)`);
+						});
+					break;
+			}
 		});
 
 	});
