@@ -4,6 +4,8 @@ This extensions adds a context menu option that allows you to share selected sni
 
 ## Features
 
+![Preview](images/video.gif)
+
 Just right click on the document or on the selection and select "Share on ShareMyCode.io"
 
 ![Right Click](images/rightclick.png)
@@ -29,5 +31,9 @@ Edited README
 ### 1.0.3
 
 Added copy button
+
+### 1.0.4
+
+Edited README
 
 **Enjoy!**
