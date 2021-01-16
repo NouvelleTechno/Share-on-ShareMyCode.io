@@ -1,6 +1,10 @@
 # share-on-sharemycode-io README
 
 [![Code Grade](https://www.code-inspector.com/project/17864/status/svg)](https://frontend.code-inspector.com/public/project/17864/Share-on-ShareMyCode.io/dashboard)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/Nouvelle-Technofr.share-on-sharemycode-io.svg)](https://marketplace.visualstudio.com/items?itemName=Nouvelle-Technofr.share-on-sharemycode-io) 
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Nouvelle-Technofr.share-on-sharemycode-io.svg)](https://marketplace.visualstudio.com/items?itemName=Nouvelle-Technofr.share-on-sharemycode-io) 
+[![Rating](https://vsmarketplacebadge.apphb.com/rating-star/Nouvelle-Technofr.share-on-sharemycode-io.svg)](https://marketplace.visualstudio.com/items?itemName=Nouvelle-Technofr.share-on-sharemycode-io) 
+
 
 This extensions adds a context menu option that allows you to share selected snippet or the whole page on https://sharemycode.io website.
 
