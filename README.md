@@ -1,5 +1,7 @@
 # share-on-sharemycode-io README
 
+[![Code Grade](https://www.code-inspector.com/project/17864/status/svg)](https://frontend.code-inspector.com/public/project/17864/Share-on-ShareMyCode.io/dashboard)
+
 This extensions adds a context menu option that allows you to share selected snippet or the whole page on https://sharemycode.io website.
 
 ## Features
