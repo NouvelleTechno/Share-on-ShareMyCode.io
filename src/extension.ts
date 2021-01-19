@@ -17,7 +17,8 @@ export function activate(context: vscode.ExtensionContext) {
 
 		let data = {
 			code: text,
-			lang: editor.document.languageId
+			lang: editor.document.languageId,
+			source: "vscode"
 		};
 
 		axios.post(url, JSON.stringify(data), {

@@ -50,4 +50,8 @@ Edited README
 
 Added default settings
 
+### 1.0.6
+
+Technical update
+
 **Enjoy!**

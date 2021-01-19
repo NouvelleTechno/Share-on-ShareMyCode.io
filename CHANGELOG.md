@@ -30,3 +30,7 @@ Initial Commit
 ## [1.0.5] - 2021-01-16
 ### Edited
 - extension.ts
+
+## [1.0.6] - 2021-01-19
+### Edited
+- extension.ts

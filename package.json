@@ -3,7 +3,7 @@
 	"displayName": "Share on ShareMyCode.io",
 	"publisher": "Nouvelle-Technofr",
 	"description": "Easily share snippets on ShareMyCode.io website",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
