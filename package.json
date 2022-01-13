@@ -3,9 +3,9 @@
 	"displayName": "Share on ShareMyCode.io",
 	"publisher": "Nouvelle-Technofr",
 	"description": "Easily share snippets on ShareMyCode.io website",
-	"version": "1.0.6",
+	"version": "1.1.0",
 	"engines": {
-		"vscode": "^1.52.0"
+		"vscode": "^1.63.0"
 	},
 	"categories": [
 		"Other"
@@ -16,15 +16,19 @@
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "share-on-sharemycode-io.share",
-			"title": "Share on ShareMyCode.io"
-		}],
-		"menus": {
-			"editor/context": [{
+		"commands": [
+			{
 				"command": "share-on-sharemycode-io.share",
-				"group": "navigation"
-			}]
+				"title": "Share on ShareMyCode.io"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "share-on-sharemycode-io.share",
+					"group": "navigation"
+				}
+			]
 		},
 		"configuration": {
 			"title": "Share on ShareMyCode.io",
@@ -32,7 +36,11 @@
 				"share-on-sharemycode-io.defaultAction": {
 					"type": "string",
 					"default": "ask",
-					"enum": ["ask", "copy", "open"],
+					"enum": [
+						"ask",
+						"copy",
+						"open"
+					],
 					"enumDescriptions": [
 						"Always ask action to be performed",
 						"Always copy link to clipboard",
@@ -54,20 +62,20 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.52.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.15.0",
+		"@types/vscode": "^1.52.0",
 		"@typescript-eslint/eslint-plugin": "^4.9.0",
 		"@typescript-eslint/parser": "^4.9.0",
+		"eslint": "^7.15.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.1.3",
+		"ts-loader": "^8.0.11",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1",
-		"ts-loader": "^8.0.11",
 		"webpack": "^5.10.0",
-		"webpack-cli": "^4.2.0"
+		"webpack-cli": "^4.9.1"
 	},
 	"dependencies": {
 		"axios": "^0.21.1"

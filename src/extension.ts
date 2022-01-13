@@ -14,11 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
 		if (!text) {
 			text = editor.document.getText();
 		}
-
+        let filename = vscode.window.activeTextEditor?.document.fileName ?? "";
+        let name = (filename === "") ? null : filename.split('\\').pop() ?? null;
+        name = (name === null) ? name : name.split('/').pop() ?? null;
+        
 		let data = {
 			code: text,
 			lang: editor.document.languageId,
-			source: "vscode"
+			source: "vscode",
+            filename: name
 		};
 
 		axios.post(url, JSON.stringify(data), {
