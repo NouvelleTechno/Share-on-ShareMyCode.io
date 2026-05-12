@@ -2,8 +2,8 @@ import * as vscode from 'vscode';
 import axios, { AxiosPromise } from 'axios';
 
 export function activate(context: vscode.ExtensionContext) {
-	let disposable = vscode.commands.registerCommand('share-on-sharemycode-io.share', () => {
-		const url = "https://sharemycode.io/code/api/add";
+	let disposable = vscode.commands.registerCommand('share-on-snipcode.share', () => {
+		const url = "https://snipcode.fr/code/api/add";
 		let editor = vscode.window.activeTextEditor;
 		if (!editor) {
 			return; // No open text editor
@@ -33,7 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
 		}).then(response => {
 			let copyLink = "Copy link";
 			let openLink = "Open link";
-			switch (vscode.workspace.getConfiguration("share-on-sharemycode-io").get("defaultAction")) {
+			switch (vscode.workspace.getConfiguration("share-on-snipcode").get("defaultAction")) {
 				case "ask":
 					vscode.window.showInformationMessage(`Successfully shared`, copyLink, openLink)
 						.then(selection => {

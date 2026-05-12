@@ -1,4 +1,4 @@
-# share-on-sharemycode-io README
+# share-on-snipcode README
 
 [![Code Grade](https://api.codiga.io/project/17864/status/svg)](https://frontend.code-inspector.com/public/project/17864/Share-on-ShareMyCode.io/dashboard)
 [![Version](https://vsmarketplacebadge.apphb.com/version-short/Nouvelle-Technofr.share-on-sharemycode-io.svg)](https://marketplace.visualstudio.com/items?itemName=Nouvelle-Technofr.share-on-sharemycode-io) 
@@ -6,13 +6,13 @@
 [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/Nouvelle-Technofr.share-on-sharemycode-io.svg)](https://marketplace.visualstudio.com/items?itemName=Nouvelle-Technofr.share-on-sharemycode-io) 
 
 
-This extensions adds a context menu option that allows you to share selected snippet or the whole page on https://sharemycode.io website.
+This extensions adds a context menu option that allows you to share selected snippet or the whole page on https://snipcode.fr website.
 
 ## Features
 
 ![Preview](images/video.gif)
 
-Just right click on the document or on the selection and select "Share on ShareMyCode.io"
+Just right click on the document or on the selection and select "Share on SnipCode"
 
 ![Right Click](images/rightclick.png)
 
@@ -53,5 +53,9 @@ Added default settings
 ### 1.0.6
 
 Technical update
+
+### 2.0.0
+
+Main website changed to https://snipcode.fr
 
 **Enjoy!**

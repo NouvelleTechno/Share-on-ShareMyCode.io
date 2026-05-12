@@ -1,9 +1,9 @@
 {
-	"name": "share-on-sharemycode-io",
-	"displayName": "Share on ShareMyCode.io",
+	"name": "share-on-snipcode",
+	"displayName": "Share on SnipCode.fr",
 	"publisher": "Nouvelle-Technofr",
-	"description": "Easily share snippets on ShareMyCode.io website",
-	"version": "1.1.1",
+	"description": "Easily share snippets on SnipCode.fr website",
+	"version": "2.0.0",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -12,20 +12,20 @@
 	],
 	"icon": "images/logo.png",
 	"activationEvents": [
-		"onCommand:share-on-sharemycode-io.share"
+		"onCommand:share-on-snipcode.share"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "share-on-sharemycode-io.share",
+				"command": "share-on-snipcode.share",
 				"title": "Share on ShareMyCode.io"
 			}
 		],
 		"menus": {
 			"editor/context": [
 				{
-					"command": "share-on-sharemycode-io.share",
+					"command": "share-on-snipcode.share",
 					"group": "navigation"
 				}
 			]
@@ -33,7 +33,7 @@
 		"configuration": {
 			"title": "Share on ShareMyCode.io",
 			"properties": {
-				"share-on-sharemycode-io.defaultAction": {
+				"share-on-snipcode.defaultAction": {
 					"type": "string",
 					"default": "ask",
 					"enum": [
@@ -75,7 +75,7 @@
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1",
 		"webpack": "^5.10.0",
-		"webpack-cli": "^4.9.1"
+		"webpack-cli": "^4.10.0"
 	},
 	"dependencies": {
 		"axios": "^0.21.1"
